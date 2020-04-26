@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="test" class="p1">this is a paragraph.</p>
+    <p class="p1 p2">this is another paragraph.</p>
+    <p class="p2 p1">this is the third paragraph.</p>
+    <ul>
+        <li>singing</li>
+        <li>dancing</li>
+        <li>swimming</li>
+    </ul>
+    <script>
+        var p = document.getElementById('test')
+        console.log(typeof p)   // 'object'
+
+        var liArr = document.getElementsByTagName('li')
+        console.log(liArr)
+
+        // id属性是test的元素包含多少个li列表项
+        console.log(p.getElementsByTagName('li').length)
+
+        var pArr = document.getElementsByClassName('p1 p2')
+        console.log(pArr.length)
+        p.setAttribute('class', 'ppppppp')
+    </script>
+</body>
+</html>

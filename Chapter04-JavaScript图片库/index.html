@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript图片库</title>
+    <script src="./scripts/showPic.js"></script>
+    <link rel="stylesheet" href="./styles/layout.css" media="screen" />
+</head>
+<body>
+    <h1>SnapShots</h1>
+    <ul>
+        <li>
+            <a href="./images/dad.png" title="dad" onclick="showPic(this); return false;">Dad</a>
+        </li>
+        <li>
+            <a href="./images/mom.png" title="mom" onclick="showPic(this); return false;">Mom</a>
+        </li>
+    </ul>
+    <img style="width: 400px; height: 400px;" id="placeholder" src="images/placeholder.jpg" alt="my image gallery" />
+    <p id="description">Choose an image.</p>
+
+    <script>
+        window.onload = countBodyChildren
+    </script>
+</body>
+</html>
